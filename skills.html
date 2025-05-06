@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Skills & Talents{% endblock %}
+
+{% block content %}
+    <h1>Skills & Talents</h1>
+
+    <h2>Technical Skills</h2>
+    <ul>
+        {% for skill in skills.find('technical') %}
+            <li>{{ skill.text }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Talents</h2>
+    <ul>
+        {% for talent in skills.find('talents') %}
+            <li>{{ talent.text }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>{{ personal.find('name').text }}</h1>
+    <img src="/static/img/profile.jpg" alt="Profile Photo" width="150">
+    <p>{{ personal.find('bio').text }}</p>
+    <p><strong>Location:</strong> {{ personal.find('location').text }}</p>
+
+    <h3>Connect with me:</h3>
+    <ul>
+        {% for social in personal.find('socials') %}
+            <li><a href="{{ social.text }}">{{ social.tag.title() }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

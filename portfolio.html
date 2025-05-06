@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+    <h1>My Projects</h1>
+    {% for project in projects %}
+        <div class="project">
+            <h2>{{ project.find('title').text }}</h2>
+            <p>{{ project.find('description').text }}</p>
+            <p><strong>Technologies:</strong> {{ project.find('technologies').text }}</p>
+            <a href="{{ project.find('link').text }}">View Project</a>
+            {% if project.find('image') is not none %}
+                <div>
+                    <img src="/{{ project.find('image').text }}" alt="Project Image" width="200">
+                </div>
+            {% endif %}
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,88 @@
+<portfolio>
+    <personal>
+        <name>Shaniah P. Puray</name>
+        <bio>Passionate developer and lifelong learner.</bio>
+        <location>Lungsodaan, Hinundayan, Southern Leyte</location>
+        <email>shaniahpuray@gmail.com</email>
+        <socials>
+            <facebook>https://facebook.com/johndoe</facebook>
+            <instagram>https://instagram.com/johndoe</instagram>
+            <linkedin>https://linkedin.com/in/johndoe</linkedin>
+        </socials>
+    </personal>
+
+    <projects>
+        <project>
+            <title>Personal Portfolio</title>
+            <description>Showcasing my work and experience.</description>
+            <technologies>HTML, CSS, Python, Flask</technologies>
+            <link>https://github.com/johndoe/portfolio</link>
+            <image>static/img/portfolio.png</image>
+        </project>
+        <project>
+            <title>ToDo App</title>
+            <description>A productivity web app for managing tasks.</description>
+            <technologies>JavaScript, Flask, SQLite</technologies>
+            <link>https://example.com/todo</link>
+        </project>
+    </projects>
+
+    <skills>
+        <technical>
+            <skill>Python</skill>
+            <skill>HTML</skill>
+            <skill>CSS</skill>
+            <skill>Flask</skill>
+        </technical>
+        <talents>
+            <talent>Photography</talent>
+            <talent>Singing</talent>
+        </talents>
+    </skills>
+
+    <organizations>
+        <org>
+            <name>Youth Ministry</name>
+            <role>Volunteer Leader</role>
+            <years>2021–Present</years>
+        </org>
+        <org>
+            <name>Coding Club</name>
+            <role>President</role>
+            <years>2022–2024</years>
+        </org>
+    </organizations>
+
+    <services>
+        <service>
+            <name>Web Design</name>
+            <description>Creating responsive websites for personal and business use.</description>
+        </service>
+        <service>
+            <name>Tutoring</name>
+            <description>Helping students understand Python basics and web dev.</description>
+        </service>
+    </services>
+
+    <testimonials>
+        <testimonial>
+            <name>Jane Smith</name>
+            <relation>Peer Developer</relation>
+            <message>John is a highly reliable and talented developer with a keen eye for design.</message>
+        </testimonial>
+        <testimonial>
+            <name>Michael Reyes</name>
+            <relation>Mentor</relation>
+            <message>He always delivers quality work and never stops learning.</message>
+        </testimonial>
+    </testimonials>
+
+    <contact>
+        <email>john@example.com</email>
+        <phone>+63 900 123 4567</phone>
+        <socials>
+            <facebook>https://facebook.com/johndoe</facebook>
+            <linkedin>https://linkedin.com/in/johndoe</linkedin>
+        </socials>
+    </contact>
+</portfolio>

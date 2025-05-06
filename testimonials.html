@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Testimonials{% endblock %}
+
+{% block content %}
+    <h1>Testimonials</h1>
+    {% for t in testimonials %}
+        <blockquote>
+            "{{ t.find('message').text }}"
+            <footer>- {{ t.find('name').text }}, {{ t.find('relation').text }}</footer>
+        </blockquote>
+        <hr>
+    {% endfor %}
+{% endblock %}

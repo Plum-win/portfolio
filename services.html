@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock %}
+
+{% block content %}
+    <h1>Services Offered</h1>
+    {% for service in services %}
+        <h2>{{ service.find('name').text }}</h2>
+        <p>{{ service.find('description').text }}</p>
+        <hr>
+    {% endfor %}
+{% endblock %}

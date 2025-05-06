@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+    <h1>Contact Me</h1>
+    <p><strong>Email:</strong> {{ contact.find('email').text }}</p>
+    {% if contact.find('phone') is not none %}
+        <p><strong>Phone:</strong> {{ contact.find('phone').text }}</p>
+    {% endif %}
+
+    <h3>Social Media</h3>
+    <ul>
+        {% for s in contact.find('socials') %}
+            <li><a href="{{ s.text }}">{{ s.tag.title() }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h3>Message Me (Demo Form)</h3>
+    <form>
+        <label>Name:</label><br>
+        <input type="text"><br>
+        <label>Message:</label><br>
+        <textarea></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+{% endblock %}

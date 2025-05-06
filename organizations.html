@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Organizations{% endblock %}
+
+{% block content %}
+    <h1>Organizations</h1>
+    {% for org in orgs %}
+        <h2>{{ org.find('name').text }}</h2>
+        <p><strong>Role:</strong> {{ org.find('role').text }}</p>
+        <p><strong>Years:</strong> {{ org.find('years').text }}</p>
+        <hr>
+    {% endfor %}
+{% endblock %}
